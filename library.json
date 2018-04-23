@@ -1,0 +1,22 @@
+{
+  "name": "Sparkfun_TB6612FNG_Arduino_Library",
+  "keywords": "sparkfun, pwm, tb6612fng, motor, controll",
+  "description": "Arduino library that makes use of the TB6612FNG and tested on the Sparkfun FTB6612NG carrier board.",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/TADT1909/SparkFun_TB6612FNG_Arduino_Library.git"
+  },
+  "authors":
+  [
+    {
+      "name": "Michelle",
+      "email": "michelle@sparkfun.com",
+      "url": "https://sparkfun.com",
+      "maintainer": true
+    }
+  ],
+  "version": "1.0.0",
+  "frameworks": "arduino",
+  "platforms": "atmelavr"
+}
