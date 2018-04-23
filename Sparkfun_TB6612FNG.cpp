@@ -1,5 +1,5 @@
 /******************************************************************************
-TB6612.cpp
+Sparkfun_TB6612FNG.cpp
 TB6612FNG H-Bridge Motor Driver Example code
 Michelle @ SparkFun Electronics
 8/20/16
@@ -18,7 +18,7 @@ Developed on Arduino 1.6.4
 Developed with ROB-9457
 ******************************************************************************/
 
-#include "SparkFun_TB6612.h"
+#include "Sparkfun_TB6612FNG.h"
 #include <Arduino.h>
 
 Motor::Motor(int In1pin, int In2pin, int PWMpin, int offset, int STBYpin)
@@ -28,7 +28,7 @@ Motor::Motor(int In1pin, int In2pin, int PWMpin, int offset, int STBYpin)
   PWM = PWMpin;
   Standby = STBYpin;
   Offset = offset;
-  
+
   pinMode(In1, OUTPUT);
   pinMode(In2, OUTPUT);
   pinMode(PWM, OUTPUT);
@@ -103,7 +103,7 @@ void left(Motor left, Motor right, int speed)
 	int temp = abs(speed)/2;
 	left.drive(-temp);
 	right.drive(temp);
-	
+
 }
 
 
@@ -112,7 +112,7 @@ void right(Motor left, Motor right, int speed)
 	int temp = abs(speed)/2;
 	left.drive(temp);
 	right.drive(-temp);
-	
+
 }
 void brake(Motor motor1, Motor motor2)
 {
